@@ -1,4 +1,4 @@
-import { Route,BrowserRouter } from "react-router-dom";
+import { Route,BrowserRouter,Redirect } from "react-router-dom";
 import Layout from "./components/layout";
 import "./App.css";
 import Home from "./pages/home/Home";
@@ -10,8 +10,8 @@ function App() {
     <div className="App"  >
       <Layout>
    
-        <Route path="/" exact>
-         <Home/>
+      <Route path="/">
+          <Redirect to="/home" />
         </Route>
         <Route path="/help" >
           <Help />
