@@ -38,6 +38,7 @@ function Navbar() {
               toggleId={toggle}
               title={drop.title}
               list={drop.list}
+              isOpen={isOpen}
             />
           );
         })}

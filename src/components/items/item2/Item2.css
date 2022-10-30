@@ -38,3 +38,11 @@ margin: 16px;
 
     color: #23282775;
 }
+@media screen and (max-width:920px) {
+    .item-cont
+    {
+        width: 100%
+
+    }
+   
+}

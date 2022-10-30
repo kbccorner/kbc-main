@@ -208,29 +208,50 @@ left: 30px;
 {
     background-color:#0b3a42;
     /* text-align: center; */
-    padding: 10px;
-    padding-left: 10%;
-    padding-right: 10% ;
-    position: relative;
-    width: 100%;
-    height:50vh;
-    padding-left:10% ;
-    padding-right:10% ;
+    padding: 20px;
+    align-content: center;
     align-items: center;
+  
+   
+    width: 100%;
+    height:70vh;
+ 
+    display: flex;
+   
+    justify-content: space-around;
+ 
+}
+.typing
+{
+   flex:2;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.pictuers
+{
+    flex:1;
+    align-items: center;
+
+}
+.pictuers>img{
+    width: 400px;
+    height: 400px;
+ 
 }
 .introtitle
 {
  padding: 20px;
  color: aqua;
  font-size: 28px;
+
 }
 .introtste
 {
     font-size: 16px;
     text-align: center;
+    line-height: 45px;
 
 }
 .introlink
@@ -245,4 +266,66 @@ left: 30px;
     padding: 11px;
     text-align: center;
 
+}
+@media screen and (max-width:920px) {
+    
+    .clod2
+    {
+       
+        right: -56px; 
+    }
+    .clod1{
+        left: -56px;
+
+    }
+    .main-city-back{
+       
+       bottom: -47px;
+     
+
+    }
+    .anthersection {
+        height: 150vh;
+
+    }
+     .coleghome
+    {
+      height: 200vh;
+       /* background-color: #0b3a42; */
+    }
+    
+    .colleg
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.introhome
+{
+    height: fit-content;
+   
+}
+.introtste
+{
+    font-size: 10px;
+    line-height: 25px;
+
+}
+.contry
+{
+    background-position-x: center;
+background-position-y: bottom;
+background-size: 100%;
+width: 70%;
+height: 80%;
+bottom: 0;
+
+
+}
+.introhome
+{
+    flex-direction: column;
+}
+
+   
 }

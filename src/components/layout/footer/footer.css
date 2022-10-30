@@ -115,10 +115,12 @@ align-items: center;
   
     .title {
       font-size: 20px;
+     
     }
   
     .text {
       font-size: 10px;
+      border: none;
     }
   }
   @media screen and (max-width:600px) {

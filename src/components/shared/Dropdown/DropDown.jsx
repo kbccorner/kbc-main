@@ -7,7 +7,7 @@ function DropDown(prop) {
   // window.addEventListener('mousemove',(e)=>{
   //     console.log(e.target);
   // })
-  const { title, setToggle, list, toggleId, id } = prop;
+  const { title, setToggle, list, toggleId, id,isOpen } = prop;
   const followChange = () => {
     toggleId === id ? setToggle(-1) : setToggle(id);
   };
@@ -23,8 +23,14 @@ function DropDown(prop) {
         <i className={`fa fa-angle-down  ${(toggleId === id)&&"chosen" }`}></i>
       </div>
       {toggleId === id && (<motion.div
-       initial={{y:-1500}}
-       animate={{ y:0 }}
+          initial={{y: isOpen? 0 :-1500,
+            x: isOpen? -1000 :0
+
+          
+          }}
+       animate={{ y:0,
+        x:0
+       }}
        transition={{
          type: "spring",
          stiffness: 200,
