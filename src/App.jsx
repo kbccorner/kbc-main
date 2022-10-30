@@ -13,6 +13,9 @@ function App() {
       <Route path="/">
           <Redirect to="/home" />
         </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
         <Route path="/help" >
           <Help />
         </Route>
