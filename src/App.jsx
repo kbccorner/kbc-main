@@ -4,12 +4,12 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Help from "./pages/help/helpcenter";
-
+// ss
 function App() {
   return (
     <div className="App"  >
       <Layout>
-   
+
         <Route path="/" exact>
          <Home/>
         </Route>
